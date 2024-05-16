@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="text" method="post">
+        <label for="">Input city or town</label>
+        <input type="text" name="sel">
+        <input id="get" type="submit" value="GET" formaction="/get-in">
+        <label for="country">Select city or town</label>
+        <!-- <datalist id="cityList" name="choice">
+            <option value="London">London</option>
+            <option value="Sokoto">Sokoto</option>
+            <option value="Lagos">Lagos</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Abuja">Abuja</option>
+            <option value="Kano">Kano</option>        
+            <option value="Abia">Abia</option>  
+             <option value="Rabat">Rabat</option>       
+            <option value="Kogi">Kogi</option>
+            <option value="Edo">Edo</option> 
+            <option value="Sofia">Sofia</option>
+            <option value="Accra">Accra</option>
+            <option value="New york">New york</option>
+            <option value="Carlifonia">Carlifonia</option>
+            <option value="Abdjan">Abdjan</option>
+            <option value="Sydney">Sydney</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+       </datalist> -->
+        <select name="choice" id="city">
+            <option value="London">London</option>
+            <option value="Sokoto">Sokoto</option>
+            <option value="Lagos">Lagos</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Abuja">Abuja</option>
+            <option value="Kano">Kano</option>        
+            <option value="Abia">Abia</option>  
+             <option value="Rabat">Rabat</option>       
+            <option value="Kogi">Kogi</option>
+            <option value="Edo">Edo</option> 
+            <option value="Sofia">Sofia</option>
+            <option value="Accra">Accra</option>
+            <option value="New york">New york</option>
+            <option value="Carlifonia">Carlifonia</option>
+            <option value="Abdjan">Abdjan</option>
+            <option value="Sydney">Sydney</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            </select>
+        <input id="get" type="submit" value="GET" formaction="/get-info">
+    </form>
+    <p>
+      City:  <%= city %>
+    </p>
+    <p>
+      Weather:  <%= weather %>
+    </p>
+    <p>
+      Weather Description:  <%= weatherDescription %>
+    </p>
+    <p>
+     Longitude: <%= longitude %> 
+        
+    </p>
+    <p>
+        Latitude: <%= latitude %>
+    </p>
+</body>
+</html>
